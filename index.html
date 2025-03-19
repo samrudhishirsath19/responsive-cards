@@ -43,35 +43,42 @@
             border-radius: 4px;
         }
         .cards-container{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
             padding: 2rem;
         }
         .card{
             background-color: white;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             overflow: hidden;
-            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 250px;
         }
         .card:hover{
             transform:translateY(-5px);
         }
         .card img{
             width: 100%;
-            height: 200px;
+            height: auto;
             object-fit: cover;
         }
         .card-content{
             padding: 1rem;
+            text-align: centre;
         }
         .card-content h3{
             margin-bottom: 0.5rem;
+            font-size: 1.2rem;
         }
         .card-content p{
             color: #555;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
         }
 
 
@@ -128,7 +135,7 @@
         <div class="card-content">
             <h3>The Great Adventure</h3>
             <p>
-                A thrilling journey across uncharted lands and epic quests.
+                "The Great Adventure" by George Cabot Lodge is a classic adventure novel published in 1890. It tells the story of a young man named Paul who embarks on a journey of exploration and self-discovery. Set against a backdrop of thrilling adventures, the novel captures themes of bravery, personal growth, and the pursuit of greatness.The narrative highlights the challenges Paul faces, his interactions with other characters, and his development throughout the adventure. The story is noted for its vivid descriptions and the exploration of moral and philosophical questions that arise during the protagonist's journey.Though it may not be as widely known today, the book was a notable work in the genre of adventure fiction during its time.
             </p>
         </div>
 
@@ -138,7 +145,7 @@
         <div class="card-content">
             <h3>Mysteries of the Mind</h3>
             <p>
-                Explore the complexities of the human mind through gripping stories.
+                "Mysteries of the Mind" by Richard Rastek is a book that explores the complexities of the human mind, consciousness, and the mysteries surrounding mental phenomena. It delves into topics such as perception, memory, dreams, and the nature of reality. Rastek examines both scientific and philosophical ideas, offering insights into how the mind functions, how it shapes our experiences, and the ongoing mysteries that are still not fully understood by modern science.The book is designed to engage readers with thought-provoking questions and theories, blending research with speculative ideas about the mind's potential and its unexplored territories. It aims to stimulate curiosity about the deeper layers of human consciousness and the vast unknowns that still lie within it.
             </p>
         </div>
 
@@ -148,7 +155,7 @@
         <div class="card-content">
             <h3>Fantasy Realms</h3>
             <p>
-                Magical kingdoms, mythical creatures, and legendary heroes await.
+                "Fantasy Realms" is a book that typically refers to a collection of imaginative stories or an anthology set in fantastical worlds, filled with mythical creatures, magical powers, and epic adventures. The content of the book varies depending on the author or series, but it often explores themes such as heroism, good versus evil, magical quests, and the exploration of mythical lands.If you're referring to a specific book titled "Fantasy Realms", it could be an anthology or a part of a larger fantasy series. These types of books often transport readers to worlds beyond imagination, where characters go on epic adventures and face challenges that test their courage and resolve.
             </p>
         </div>
     </div>
