@@ -62,6 +62,7 @@
         }
         .card:hover{
             transform:translateY(-5px);
+            cursor: pointer;
         }
         .card img{
             width: 100%;
@@ -86,11 +87,24 @@
         @media (max-width: 700px) {
             .navbar{
                 flex-direction: column;
-                align-items: flex-start;
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .navbar ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+            .navbar ul li{
+                margin-bottom: 10px;
             }
             .navbar ul li a{
-                display: block;
-                width: 100%;
+                font-size: 18px;
+            }
+            .main-content{
+                margin-left: 0;
             }
         }
 
@@ -130,7 +144,7 @@
 
     <div class="cards-container">
         <div class="card">
-            <img src="./img/adventure-book.jpg" alt="Book 1">
+            <img src="./img/header/great-adventure.jpg" alt="Book 1">
         </div>
         <div class="card-content">
             <h3>The Great Adventure</h3>
@@ -140,7 +154,7 @@
         </div>
 
         <div class="card">
-            <img src="./img/mystery mind.jpg" alt="Book 2">
+            <img src="./img/header/mysteries-mind.jpg" alt="Book 2">
         </div>
         <div class="card-content">
             <h3>Mysteries of the Mind</h3>
@@ -150,7 +164,7 @@
         </div>
 
         <div class="card">
-            <img src="./img/fantasy-realms.jpeg" alt="Book 3">
+            <img src="./img/header/fantasy.jpeg" alt="Book 3">
         </div>
         <div class="card-content">
             <h3>Fantasy Realms</h3>
